@@ -1,4 +1,5 @@
 import React from "react";
+import SomeLayout from "./some-layout";
 
 export default function RootLayout({
   children,
@@ -7,7 +8,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <head />
+      <body>
+        <SomeLayout>{children}</SomeLayout>
+      </body>
     </html>
   );
 }
